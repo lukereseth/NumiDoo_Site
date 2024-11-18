@@ -1,0 +1,374 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+/*Cabeçalho*/
+
+#header {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fafafd;
+  padding: 20px 40px;
+  border-bottom: #ee4343 solid 1px;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+#header.scrolled {
+  padding: 10px 0;
+  height: 80px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#header.scrolled .logo-header img {
+  display: none;
+}
+
+#header.scrolled .texto-header h1 {
+  font-size: 30px;
+  text-align: center;
+}
+
+#header.scrolled .login-header button {
+  font-size: 14px;
+}
+
+.nav-header {
+  padding: 20px;
+}
+
+.nav-header h3 {
+  color: black;
+  margin: 0;
+
+  & a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #000000;
+  }
+}
+
+.nav-header-text {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.logo-marca {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Bauhaus 93", Arial, Helvetica, sans-serif;
+  font-size: larger;
+
+  & a {
+    text-decoration: none;
+    color: #000000;
+  }
+}
+
+.logo-marca.logo-header {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.logo-marca.texto-header {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.nav-header {
+  display: flex;
+  align-items: center;
+}
+
+.nav-header-text {
+  padding: 15px;
+  margin: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 5px;
+}
+
+.nav-header-text:hover {
+  background-color: #ee4343;
+  color: #fafafd;
+  border-radius: 5px;
+}
+
+.login-header {
+  display: flex;
+  align-items: center;
+  padding: 20px 30px;
+}
+
+.login-header button {
+  background-color: #ee4343;
+  border: 1px solid #fafafd;
+  color: #fafafd;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  margin: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-header button:hover {
+  background-color: #e01414;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #333;
+  color: white;
+  transition: 0.3s;
+  padding-top: 60px;
+  z-index: 999;
+
+  & ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  & ul li {
+    padding: 15px;
+    text-align: center;
+  }
+  & ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  & ul li:hover {
+    background-color: #575757;
+  }
+}
+.sidebar.open {
+  left: 0;
+}
+
+/*Fim do Cabeçalho*/
+
+/*Corpo*/
+
+main {
+  padding-top: 150px;
+  width: 100%;
+}
+
+.contact {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  & h1 {
+    text-align: center;
+    color: #333;
+    font-size: 3rem;
+  }
+  & form {
+    display: flex;
+    flex-direction: column;
+  }
+  & label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+    font-size: 2rem;
+    padding: 10px;
+  }
+  & input,
+  textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  & textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  & button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #ee4343;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  & button:hover {
+    background-color: #e01414;
+  }
+}
+
+/*Fim do Corpo*/
+
+/*Rodapé*/
+
+#footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+
+  & p {
+    font-size: 20px;
+  }
+}
+
+.logo-redes-sociais {
+  margin-top: 10px;
+
+  & a {
+    margin: 0 15px;
+    text-decoration: none;
+  }
+
+  & img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+  }
+
+  & a:hover img {
+    transform: scale(1.1);
+  }
+}
+
+/*Fim do Rodapé*/
+
+@media screen and (max-width: 1000px) {
+  #header {
+    padding: 10px 20px;
+  }
+  #header.scrolled {
+    background-color: #fafafd;
+    padding: 20px 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  .nav-header-text {
+    font-size: 0.8rem;
+    padding: 10px;
+  }
+  .logo-marca {
+    font-size: 1.5rem;
+
+    & img {
+      display: none;
+    }
+  }
+  .nav-header,
+  .login-header {
+    display: none;
+    flex-direction: column;
+  }
+  .hamburger {
+    display: block;
+  }
+  .nav-header.open {
+    display: flex;
+  }
+  main {
+    padding-top: 60px;
+  }
+  #section-1,
+  #section-2,
+  #section-3,
+  #section-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin: 0 30px;
+    padding: 25px 0px;
+
+    & img {
+      padding: 20px;
+      width: 500px;
+      height: 500px;
+    }
+  }
+  #section-2,
+  #section-4 {
+    flex-direction: column-reverse;
+  }
+  #section-4 {
+    border-bottom: 0;
+  }
+  .section-1-2,
+  .section-2-1,
+  .section-3-2,
+  .section-4-1 {
+    font-size: 3vw;
+    padding: 20px;
+  }
+  .section-1-2 button {
+    font-size: 5vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    padding-top: 90px;
+  }
+  #section-1,
+  #section-2,
+  #section-3,
+  #section-4 {
+    & img {
+      padding: 20px;
+      width: 200px;
+      height: 200px;
+    }
+  }
+  #footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 20px;
+    & p {
+      font-size: 14px;
+    }
+    & img {
+      width: 30px;
+      height: 30px;
+      margin: 2px;
+      padding: 4px;
+    }
+    & a {
+      margin: 0;
+    }
+  }
+  .logo-redes-sociais {
+    display: flex;
+    margin: 0 0 0 20px;
+  }
+}
