@@ -23,12 +23,35 @@ function toggleHeaderStyle() {
 }
 
 // Selecionando o ícone de hambúrguer e a sidebar
-const hamburger = document.getElementById('hamburger');
-const sidebar = document.getElementById('sidebar');
-const mainContent = document.querySelector('main');
+const hamburger = document.getElementById("hamburger");
+const sidebar = document.getElementById("sidebar");
+const mainContent = document.querySelector("main");
 
 // Quando o ícone de hambúrguer for clicado, alterna a classe 'open' na sidebar
-hamburger.addEventListener('click', function() {
-  sidebar.classList.toggle('open'); // Abre ou fecha a sidebar
-  mainContent.classList.toggle('shifted'); // Desloca o conteúdo
+hamburger.addEventListener("click", function () {
+  sidebar.classList.toggle("open"); // Abre ou fecha a sidebar
+  mainContent.classList.toggle("shifted"); // Desloca o conteúdo
+});
+
+const swiper = new Swiper(".swiper", {
+  loop: true, // Ativa o looping
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  slidesPerView: 1, // Mostra um slide por vez
+  spaceBetween: 20, // Espaço entre os slides
+  breakpoints: {
+    // Configurações para diferentes tamanhos de tela
+    768: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 2,
+    },
+  },
 });

@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NumiDoo - Sobre Nós</title>
     <link rel="stylesheet" href="css/sobreNos.css" />
-    
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
   </head>
   <body>
     <header id="header">
@@ -19,11 +21,13 @@
       </nav>
       <div class="logo-marca">
         <div class="logo-header">
-          <img
-            height="100px"
-            width="160px"
-            src="/img/img-header-logo.png"
-            alt="Logo" />
+          <a href="index.html">
+            <img
+              height="100px"
+              width="160px"
+              src="/img/img-header-logo.png"
+              alt="Logo" />
+          </a>
         </div>
         <div class="texto-header">
           <h1>
@@ -58,10 +62,6 @@
             e envolvente para crianças do 1º ano do ensino fundamental,
             utilizando jogos interativos e técnicas educacionais comprovadas
             para desenvolver habilidades essenciais de forma leve e eficaz.
-            Acreditamos que, ao conectar a matemática com o cotidiano e a
-            diversão, podemos estimular a curiosidade natural das crianças e
-            ajudá-las a dominar conceitos fundamentais, promovendo uma base
-            sólida para seu futuro aprendizado.
           </p>
         </div>
       </section>
@@ -69,9 +69,7 @@
         <div class="section-2-1">
           <h3>Visão</h3>
           <p>
-            Ser a plataforma de aprendizado de matemática mais inovadora e
-            acessível, reconhecida por tornar o ensino divertido e eficaz,
-            incentivando crianças em todo o mundo a se apaixonarem por números,
+            Incentivar crianças em todo o mundo a se apaixonarem por números,
             formas e soluções criativas. Nosso objetivo é criar uma geração de
             alunos confiantes, curiosos e preparados para os desafios do futuro.
           </p>
@@ -88,15 +86,6 @@
           <ul>
             Valores
           </ul>
-          <li>
-            <span>Aprendizado Divertido:</span> Acreditamos que o aprendizado
-            deve ser uma experiência prazerosa e envolvente. <br />
-          </li>
-          <li>
-            <span>Inovação e Criatividade:</span> Valorizamos a criatividade e
-            buscamos sempre inovar para tornar o ensino mais interessante.
-            <br />
-          </li>
           <li>
             <span>Acessibilidade e Inclusão:</span> Queremos que todos tenham
             acesso a uma educação de qualidade, de forma gratuita e inclusiva.
@@ -121,22 +110,39 @@
           <h3>Conheça mais sobre a nossa equipe!</h3>
         </div>
       </section>
-      <section id="section-5">
-        <div class="section-5-1">
-          <h3>Eduardo</h3>
+      <section id="section-5" class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <h3>Eduardo</h3>
+            <img src="/img/Eduardo.jpg" alt="Eduardo" />
+            <p>BDA</p>
+          </div>
+          <div class="swiper-slide">
+            <h3>Lucas</h3>
+            <img src="/img/Lucas.jpg" alt="Lucas" />
+            <p>Front-End</p>
+          </div>
+          <div class="swiper-slide">
+            <h3>Mateus</h3>
+            <img src="/img/Mateus.jpg" alt="Mateus" />
+            <p>Front-End</p>
+          </div>
+          <div class="swiper-slide">
+            <h3>Ruan</h3>
+            <img src="/img/Ruan.jpg" alt="Ruan" />
+            <p>Back-End</p>
+          </div>
+          <div class="swiper-slide">
+            <h3>Wladimir</h3>
+            <img src="/img/Wladimir.jpg" alt="Wladimir" />
+            <p>Back-End</p>
+          </div>
         </div>
-        <div class="section-5-2">
-          <h3>Lucas</h3>
-        </div>
-        <div class="section-5-3">
-          <h3>Mateus</h3>
-        </div>
-        <div class="section-5-4">
-          <h3>Ruan</h3>
-        </div>
-        <div class="section-5-5">
-          <h3>Wladimir</h3>
-        </div>
+        <!-- Botões de navegação -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <!-- Paginação -->
+        <div class="swiper-pagination"></div>
       </section>
     </main>
 
@@ -163,6 +169,7 @@
       </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="/js/script.js"></script>
   </body>
 </html>
