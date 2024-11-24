@@ -1,0 +1,19 @@
+/*Corpo*/
+
+main {
+  padding-top: 150px;
+}
+
+/*Fim do Corpo*/
+
+@media screen and (max-width: 1000px) {
+  main {
+    padding-top: 60px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    padding-top: 90px;
+  }
+}
