@@ -2,6 +2,90 @@
 
 main {
   padding-top: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-1 {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+}
+
+.form-wrapper {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0px 8px #5f2b2b65;
+  width: 100%;
+  width: 600px;
+  padding: 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 30px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+label {
+  font-size: 20px;
+  padding: 2px;
+  color: #333;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #ee4545;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background-color: #ee4545;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #ee4545;
+}
+
+.login-link {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.login-link a {
+  color: #ee4545;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
 }
 
 /*Fim do Corpo*/

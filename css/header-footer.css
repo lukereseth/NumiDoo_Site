@@ -82,6 +82,9 @@
   border-radius: 5px;
 
   & a {
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
     text-decoration: none;
     color: #000000;
   }
@@ -98,23 +101,24 @@
   align-items: center;
   gap: 20px;
   padding: 20px 30px;
-}
 
-.login-header button {
-  background-color: #ee4343;
-  border: 1px solid #fafafd;
-  color: #fafafd;
-  padding: 10px 20px;
-  font-size: 1rem;
-  font-weight: bold;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
+  & button {
+    background-color: #ee4343;
+    border: 1px solid #fafafd;
+    color: #fafafd;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
 
-.login-header button:hover {
-  background-color: #e01414;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  & button:hover {
+    background-color: #e01414;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
 }
 
 .hamburger {
