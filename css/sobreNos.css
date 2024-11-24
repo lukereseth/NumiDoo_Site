@@ -250,6 +250,7 @@ main {
 
 .swiper-slide:hover img {
   transform: scale(1.02);
+  box-shadow: 5px 5px rgb(255, 156, 156);
 }
 
 .swiper-button-prev,
